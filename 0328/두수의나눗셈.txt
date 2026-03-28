@@ -1,0 +1,34 @@
+📘 두 수의 나눗셈
+
+- 🧩 난이도: level 0
+- 🛠 사용 언어: Python3
+- https://school.programmers.co.kr/learn/courses/30/lessons/120806
+
+---------
+
+🧠 문제 설명
+
+정수 num1과 num2가 매개변수로 주어질 때, 
+num1을 num2로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 
+solution 함수를 완성해주세요.
+
+---------
+
+💡 아이디어
+
+먼저 num1에 num2를 나눈 값에 1000을 곱한 값을 구한 뒤,
+정수부분만 출력되도록 한다.
+
+---------
+
+배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
+>>
+int()를 사용하면 정수 부분만 출력이 가능하다.
+
+다른 사람의 풀이
+>> 
+def solution(num1, num2):
+    answer = num1 / num2 * 1000
+    return answer // 1
+
+// << 몫(소수점 이하는 버림)
